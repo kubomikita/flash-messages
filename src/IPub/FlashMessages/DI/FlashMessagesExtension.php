@@ -92,9 +92,10 @@ final class FlashMessagesExtension extends DI\CompilerExtension
 		// Extension events
 		$builder->addDefinition($this->prefix('onResponseHandler'))
 			->setType(Events\OnResponseHandler::class);
-
-		$application = $builder->getDefinition('application');
-		$application->addSetup('$service->onResponse[] = ?', ['@' . $this->prefix('onResponseHandler')]);
+		if(PHP_SAPI !== "cli") {
+			$application = $builder->getDefinition( 'application' );
+			$application->addSetup( '$service->onResponse[] = ?', [ '@' . $this->prefix( 'onResponseHandler' ) ] );
+		}
 	}
 
 	/**
