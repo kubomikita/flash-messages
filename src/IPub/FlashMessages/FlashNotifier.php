@@ -59,8 +59,8 @@ class FlashNotifier
 	 * @param Localization\ITranslator|NULL $translator
 	 */
 	public function __construct(
-		bool $useTranslator = TRUE,
 		Storage\IStorage $storage,
+		bool $useTranslator = TRUE,
 		Localization\ITranslator $translator = NULL
 	) {
 		$this->storage = $storage;
