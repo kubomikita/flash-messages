@@ -35,7 +35,7 @@
 		"nette/di"			: "^3.0",
 		"nette/utils"		: "^3.0",
 		"nette/http"		: "^3.0",
-		"latte/latte"	: "^2.5"
+		"latte/latte"	: "^2.10 || ^3.0"
 	},
 	"suggest": {
 		"contributte/translation": "Option for message translation"
