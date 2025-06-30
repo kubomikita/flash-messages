@@ -1,0 +1,12 @@
+extensions:
+	translator: Contributte\Translation\DI\TranslationExtension
+
+flashMessages:
+    useTranslator: true
+
+translator:
+	locales:
+		whitelist: [en, cs, sk]
+		default: en
+	dirs:
+		- %appDir%/lang

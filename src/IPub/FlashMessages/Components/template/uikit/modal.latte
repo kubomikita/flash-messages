@@ -1,0 +1,11 @@
+<div class="uk-modal modal display alert alert-{$level} {$modalClass}" data-status="{$level}">
+	<div class="uk-modal-dialog">
+		<div n:if="$title && $useTitle" class="uk-modal-header">{$title}</div>
+		<p>
+			{$body}
+		</p>
+		<div class="uk-modal-footer">
+			<button class="uk-button uk-modal-close" type="button">Close</button>
+		</div>
+	</div>
+</div>

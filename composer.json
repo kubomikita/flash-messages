@@ -1,0 +1,61 @@
+{
+	"name"			: "ipub/flash-messages",
+	"type"			: "library",
+	"description"	: "Flash messages handler for Nette Framework",
+	"keywords"		: ["nette", "ipub", "ipublikuj", "tools", "flashes", "messages"],
+	"homepage"		: "https://github.com/iPublikuj/flash-messages",
+	"license"		: ["GPL-2.0", "GPL-3.0"],
+
+	"authors": [
+		{
+			"name"		: "iPublikuj:cms",
+			"email"		: "info@ipublikuj.eu",
+			"homepage"	: "https://www.ipublikuj.eu/"
+		}
+	],
+
+	"support": {
+		"email"		:"support@ipublikuj.eu",
+		"issues"	:"https://github.com/iPublikuj/flash-messages/issues"
+	},
+
+	"extra": {
+		"ipub"	: {
+			"configuration" : {
+				"extensions" : {
+					"flashMessages" : "IPub\\FlashMessages\\DI\\FlashMessagesExtension"
+				}
+			}
+		}
+	},
+
+	"require": {
+		"php"	: ">=7.1.0",
+		"nette/application"	: "^3.0",
+		"nette/di"			: "^3.0",
+		"nette/utils"		: "^3.0",
+		"nette/http"		: "^3.0",
+		"latte/latte"	: "^2.10 || ^3.0"
+	},
+	"suggest": {
+		"contributte/translation": "Option for message translation"
+	},
+
+	"require-dev": {
+		"nette/bootstrap"		: "^3.0",
+		"nette/forms"			: "^3.0",
+		"nette/mail"			: "^3.0",
+		"nette/robot-loader"	: "^3.0",
+		"nette/safe-stream"		: "~2.4",
+		"nette/tester"			: "~2.0",
+		"tracy/tracy"	: "^2.0",
+		"pds/skeleton"	: "~1.0",
+		"contributte/translation": "^0.1.0"
+	},
+
+	"autoload": {
+		"psr-0": {
+			"IPub\\FlashMessages\\": "src/"
+		}
+	}
+}

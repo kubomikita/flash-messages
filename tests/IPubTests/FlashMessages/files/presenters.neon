@@ -1,0 +1,8 @@
+application:
+	mapping:
+		*: IPubTests\FlashMessages\*Presenter
+
+services:
+	# Test presenter
+	presenters.test:
+		class: IPubTests\FlashMessages\TestPresenter
